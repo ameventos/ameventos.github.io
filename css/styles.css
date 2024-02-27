@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #FFBE98;
+    --secondary-color: #F7DED0;
+    --accent-color: #FF6B6B;
+    --white-color: #F0F0F0;
+    --white-color-rgb: 255, 255, 255;
+}
+
+body {
+    font-family: ''Roboto', sans-serif;';
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "SlimSlim";
+    src: url('../fonts/Slim_Slim.ttf');
+}
+
+@font-face {
+    font-family: "SlimLight";
+    src: url('../fonts/SlimamifLight.ttf');
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url('../fonts/Nunito.ttf');
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(var(--white-color-rgb), 0.7); /* Fondo translúcido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 40%;
+}
+
+.welcome {
+    font-family: SlimLight;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+}
+
+.Button{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Button text {
+    color: rgb(47, 46, 46);
+}
+
+.Button:hover{
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.Button .logo-link{
+    text-decoration: none;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Button .logo-link img{
+    width: 20px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+#logo{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#logo img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        max-width: 70%;
+        height: 70%;
+        justify-content: space-around;
+    }
+    
+}
