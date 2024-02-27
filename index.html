@@ -7,46 +7,49 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <section>
-        <div id="logo">
-            <img src="./img/logo.jpeg" alt="logo">
-        </div>
-        <p class="welcome">Bienvenidos al mundo de fiestas y eventos. <br> 
-                            Contactame como más te guste:</p>
-        <div class="Button" onclick="redirectTo('https://www.instagram.com/alemartin_eventos/')">
-            <div class="logo-link">
-                <img src="./img/instagram.png" alt="Instagram">
+    <div id="background">
+        <section>
+            <div id="logo">
+                <img src="./img/logo.jpeg" alt="logo">
             </div>
-            <span style="color: rgb(88, 87, 87);">Instagram</span>
-        </div>
-        <div class="Button" onclick="redirectTo('https://www.facebook.com/alejandramartin.tortasreposteria')">
-            <div class="logo-link">
-                <img src="./img/facebook.png" alt="Facebook">
+            <p class="welcome">Bienvenidos al mundo de fiestas y eventos. <br> 
+                                Contactame como más te guste:</p>
+            <div class="Button" onclick="redirectTo('https://www.instagram.com/alemartin_eventos/')">
+                <div class="logo-link">
+                    <img src="./img/instagram.png" alt="Instagram">
+                </div>
+                <span style="color: rgb(88, 87, 87);">Instagram</span>
             </div>
-            <span style="color: rgb(88, 87, 87);">Facebook</span>
-        </div>
-        <div class="Button" onclick="redirectToWhatsApp()">
-            <div class="logo-link">
-                <img src="./img/WhatsApp.png" alt="WhatsApp">
+            <div class="Button" onclick="redirectTo('https://www.facebook.com/alejandramartin.tortasreposteria')">
+                <div class="logo-link">
+                    <img src="./img/facebook.png" alt="Facebook">
+                </div>
+                <span style="color: rgb(88, 87, 87);">Facebook</span>
             </div>
-            <span style="color: rgb(88, 87, 87);">WhatsApp</span>
-        </div>
-        <script>
-            function redirectTo(url) {
-                window.open(url, '_blank');
-            }
-
-            function redirectToWhatsApp() {
-                // Reemplaza "123456789" con el número de teléfono al que deseas dirigir
-                var phoneNumber = '2284593020';
-
-                // Crea el enlace de WhatsApp con el número de teléfono
-                var whatsappLink = 'https://wa.me/' + phoneNumber;
-
-                // Redirecciona a WhatsApp
-                window.open(whatsappLink, '_blank');
-            }
-        </script>
-    </section>
+            <div class="Button" onclick="redirectToWhatsApp()">
+                <div class="logo-link">
+                    <img src="./img/WhatsApp.png" alt="WhatsApp">
+                </div>
+                <span style="color: rgb(88, 87, 87);">WhatsApp</span>
+            </div>
+            <script>
+                function redirectTo(url) {
+                    window.open(url, '_blank');
+                }
+    
+                function redirectToWhatsApp() {
+                    // Reemplaza "123456789" con el número de teléfono al que deseas dirigir
+                    var phoneNumber = '2284593020';
+    
+                    // Crea el enlace de WhatsApp con el número de teléfono
+                    var whatsappLink = 'https://wa.me/' + phoneNumber;
+    
+                    // Redirecciona a WhatsApp
+                    window.open(whatsappLink, '_blank');
+                }
+            </script>
+        </section>
+    </div>
+    
 </body>
 </html>
