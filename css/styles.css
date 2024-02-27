@@ -26,6 +26,10 @@ body {
     background-color: rgb(25, 25, 25);
 }
 
+.button-letter {
+    color: rgb(88, 87, 87);
+}
+
 @font-face {
     font-family: "SlimSlim";
     src: url('../fonts/Slim_Slim.ttf');
